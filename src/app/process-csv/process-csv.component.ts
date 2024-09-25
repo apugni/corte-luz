@@ -29,7 +29,7 @@ export class ProcessCsvComponent {
           latitude: row.LAT,
           longitude: row.LON
         }));
-        console.log('Datos procesados desde el CSV:', data);
+        // console.log('Datos procesados desde el CSV:', data);
         this.csvDataLoaded.emit(data);
       }
 
