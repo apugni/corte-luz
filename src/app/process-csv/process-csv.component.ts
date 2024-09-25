@@ -27,7 +27,9 @@ export class ProcessCsvComponent {
       complete: (result) => {
         const data = result.data.map((row: any) => ({
           latitude: row.LAT,
-          longitude: row.LON
+          longitude: row.LON,
+          legajo: row.LEGAJO,
+          campaña: row.CAMPAÑA
         }));
         // console.log('Datos procesados desde el CSV:', data);
         this.csvDataLoaded.emit(data);
