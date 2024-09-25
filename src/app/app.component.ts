@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'corteluz';
+
+
+  csvData: any[] = [];
+
+
+  csvDataLoaded(data: any[]) {
+    console.log('Datos recibidos en AppComponent:', data);
+    this.csvData = data;
+
+
+}
+
 }

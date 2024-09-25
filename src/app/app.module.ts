@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProcessCsvComponent } from './process-csv/process-csv.component';
+import { MapaComponent } from './mapa/mapa.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProcessCsvComponent,
+    MapaComponent
   ],
   imports: [
     BrowserModule,
