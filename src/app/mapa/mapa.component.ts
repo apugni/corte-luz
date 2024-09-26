@@ -42,7 +42,11 @@ export class MapaComponent {
     this.csvData.forEach((row) => {
       const lat = parseFloat(row.latitude);
       const lon = parseFloat(row.longitude);
-      const tooltipContent = `Leg: ${row.legajo}, Campaña: ${row.campaña}, Latitud: ${row.latitude}, Longitud: ${row.longitude}`;
+      const tooltipContent = `Leg: ${row.legajo} |
+                              Colaborador: ${row.apellido}, ${row.nombre} |
+                              Campaña: ${row.campaña} |
+                              Latitud: ${row.latitude} |
+                              Longitud: ${row.longitude}`;
 
       if (!isNaN(lat) && !isNaN(lon)) {
         // console.log(`Agregando marcador en: [${lat}, ${lon}]`); // Verificación de coordenadas

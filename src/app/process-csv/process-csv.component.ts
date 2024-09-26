@@ -29,7 +29,9 @@ export class ProcessCsvComponent {
           latitude: row.LAT,
           longitude: row.LON,
           legajo: row.LEGAJO,
-          campaña: row.CAMPAÑA
+          campaña: row.CAMPAÑA,
+          apellido: row.APELLIDO,
+          nombre: row.NOMBRE
         }));
         // console.log('Datos procesados desde el CSV:', data);
         this.csvDataLoaded.emit(data);
